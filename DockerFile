@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/spring-boot-hello.jar spring-hello.jar
+EXPOSE 9001
+ENTRYPOINT ["java","-jar","spring-hello.jar"]
